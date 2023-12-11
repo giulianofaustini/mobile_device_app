@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   language: {
     marginTop: 8,
-    backgroundColor: '#0366d6', // GitHub's language color
+    backgroundColor: '#0366d6', 
     padding: 6,
     borderRadius: 4,
     color: 'white',
@@ -26,12 +26,19 @@ const styles = StyleSheet.create({
 const RepositoryItem = ({ item }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.fullName}>{item.fullName}</Text>
-      <Text style={styles.description}>{item.description}</Text>
-      <Text style={styles.language}>{item.language}</Text>
-      {/* Add more details as needed (forks, stars, etc.) */}
+      <Text style={styles.fullName}>Full name: {item.fullName}</Text>
+      <Text style={styles.description}>Description: {item.description}</Text>
+      <Text style={styles.language}>Language: {item.language}</Text>
+      <Text style={styles.description}>Forks: {item.forksCount}</Text>
+      <Text style={styles.description}>Stars: {item.stargazersCount}</Text>
+      <Text style={styles.description}>Rating: {item.ratingAverage}</Text>
+      <Text style={styles.description}>Review: {item.reviewCount}</Text>
+      <Text style={styles.description}>Url: {item.ownerAvatarUrl}</Text>
+    
     </View>
   );
 };
+
+
 
 export default RepositoryItem;
