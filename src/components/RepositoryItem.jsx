@@ -12,7 +12,7 @@ const formatCount = (count) => {
 
 export const RepositoryItem = ({ item, color, fontSize, fontWeight, style }) => {
   return (
-    <View>
+    <View style={{backgroundColor:"#e1e4e8" }} >
       <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image source={{ uri: item.ownerAvatarUrl }} style={styles.image} />
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
+   
 
   },
   imageContainer: {
