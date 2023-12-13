@@ -19,7 +19,6 @@ export const Main = () => {
         </Pressable>
       </View>
       <View style={styles.container}>
-        <Text>Rate the Repository Application</Text>
         <RepositoryList />
       </View>
     </View>

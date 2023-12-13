@@ -1,20 +1,19 @@
 export const theme = {
-    colors: {
-      textPrimary: 'white',
-      textSecondary: '#orange',
-      primary: 'white',
-      appBarBackground: '#24292e', // Add this line for app bar background color
-    },
-    fontSizes: {
-      body: 14,
-      subheading: 16,
-    },
-    fonts: {
-      main: 'System',
-    },
-    fontWeights: {
-      normal: '400',
-      bold: '700',
-    },
-  };
-  
+  colors: {
+    textPrimary: '#24292e',
+    textSecondary: '#586069',
+    primary: '#0366d6',
+  },
+  fontSizes: {
+    body: 14,
+    subheading: 16,
+  },
+  fonts: {
+    main: 'System',
+  },
+  fontWeights: {
+    normal: '400',
+    bold: '700',
+  },
+};
+

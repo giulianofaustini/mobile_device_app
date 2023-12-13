@@ -27,6 +27,7 @@ export const TextWithThemes = ({ color, fontSize, fontWeight, style, ...props })
   const textStyle = [
     styles.text,
     color === 'textSecondary' && styles.colorTextSecondary,
+    color === 'textPrimary' && styles.colorTextPrimary, 
     color === 'primary' && styles.colorPrimary,
     fontSize === 'subheading' && styles.fontSizeSubheading,
     fontWeight === 'bold' && styles.fontWeightBold,
