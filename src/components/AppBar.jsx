@@ -3,15 +3,16 @@ import { Link } from 'react-router-native';
 import { View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 import {TextWithThemes} from './TextWithThemes';
+import { ScrollView } from 'react-native';
 
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: Constants.statusBarHeight,
+    height:100,
     flexDirection: 'row',
- 
     justifyContent: 'space-around',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     backgroundColor: 'black',
     padding: 10,
   },
@@ -31,9 +32,8 @@ const styles = StyleSheet.create({
 
 export const AppBar = () => {
   return (
-    <View style={styles.container}>
-     
-    
+    <ScrollView>
+    <View style={styles.container}>    
         <Link to="/" >
         <TextWithThemes fontSize="subheading" fontWeight="bold" style={styles.link}   >
           Repositories
@@ -46,9 +46,8 @@ export const AppBar = () => {
           Sign in
         </TextWithThemes>
         </Link>
-        
-      
     </View>
+    </ScrollView>
   );
 };
 
