@@ -22,7 +22,7 @@ export const RepositoryItem = ({ item, color, fontSize, fontWeight, style }) => 
             {item.fullName}
           </TextWithThemes>
           <TextWithThemes color="textPrimary">{item.description}</TextWithThemes>
-          <TextWithThemes color="textPrimary" fontWeight="bold" style={{ backgroundColor: '#0366d6' , width: '25%' }} >
+          <TextWithThemes color="textPrimary" fontWeight="bold" style={{ backgroundColor: '#0366d6' , width: '30%' , borderRadius: 2, padding: 3}} >
             
             {item.language}
           </TextWithThemes>
@@ -32,20 +32,22 @@ export const RepositoryItem = ({ item, color, fontSize, fontWeight, style }) => 
       <View>
         <View style={styles.additionalInfoContainer}>
           <View>
-            <Text>Forks:</Text>
-            <Text>{formatCount(item.forksCount)}</Text>
+          <Text style={{fontWeight:"bold"}} >{formatCount(item.forksCount)}</Text>
+            <Text>Forks</Text> 
           </View>
           <View>
-            <Text>Stars:</Text>
-            <Text>{formatCount(item.stargazersCount)}</Text>
+          <Text  style={{fontWeight:"bold"}}>{formatCount(item.stargazersCount)}</Text>
+            <Text>Stars</Text>
           </View>
           <View>
-            <Text>Rating:</Text>
-            <Text>{item.ratingAverage}</Text>
+          <Text  style={{fontWeight:"bold"}}t>{item.ratingAverage}</Text>
+            <Text>Rating</Text>
+            
           </View>
           <View>
-            <Text>Review:</Text>
-            <Text>{item.reviewCount}</Text>
+          <Text  style={{fontWeight:"bold"}}>{item.reviewCount}</Text>
+            <Text>Review</Text>
+           
           </View>
         </View>
       </View>
@@ -66,8 +68,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   image: {
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
     borderRadius: 5,
   },
   textContainer: {
@@ -77,7 +79,6 @@ const styles = StyleSheet.create({
   additionalInfoContainer: {
     flexDirection: 'row',
     marginTop: 5,
-  
     justifyContent: 'space-around',
     alignItems: 'center',
   },
