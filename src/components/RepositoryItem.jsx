@@ -22,7 +22,7 @@ export const RepositoryItem = ({ item, color, fontSize, fontWeight, style }) => 
             {item.fullName}
           </TextWithThemes>
           <TextWithThemes color="textPrimary">{item.description}</TextWithThemes>
-          <TextWithThemes color="textPrimary" fontWeight="bold" style={{ backgroundColor: '#0366d6' , width: '30%' , borderRadius: 2, padding: 3}} >
+          <TextWithThemes color="textPrimary" fontWeight="bold" style={{color:"white" , backgroundColor: '#0366d6' , width: '40%' , borderRadius: 2, padding: 3}} >
             
             {item.language}
           </TextWithThemes>
