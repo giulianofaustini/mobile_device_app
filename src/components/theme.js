@@ -16,4 +16,3 @@ export const theme = {
     bold: '700',
   },
 };
-
